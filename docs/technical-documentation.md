@@ -56,6 +56,13 @@ erDiagram
 
 ## UI Flow
 
+Current Power Apps screen mapping:
+- `Screen1`: Home menu and workflow navigation.
+- `Screen2`: Incident Report.
+- `Screen3`: Coordinator Dashboard.
+- `Screen4`: Roster Availability.
+- `Screen5`: Equipment & Training.
+
 ```mermaid
 flowchart TD
     Home["Home / Role Selection"] --> Incident["Incident Report"]
@@ -70,7 +77,7 @@ flowchart TD
 ```
 
 ## Key Design Decisions
-- Four-screen structure keeps the MVP close to the A1 requirements while staying buildable in limited time.
+- Five-screen structure keeps the MVP close to the A1 requirements while avoiding a crowded single-screen layout.
 - Incident reporting is optimized for speed: dropdowns, short note entry, location support, and a single submit action.
 - SharePoint Lists are used because they are accessible from student Microsoft accounts and produce observable connector calls in Power Apps Monitor.
 - Soft role switching is used for assessment demonstration; true tenant RBAC is listed as future work.

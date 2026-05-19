@@ -17,10 +17,18 @@ If SharePoint setup is blocked:
 
 ## 3. Screen Build Order
 Build in this order to maximize marks quickly:
-1. Incident Report.
-2. Coordinator Dashboard.
-3. Roster Availability.
-4. Equipment & Training.
+1. Home menu.
+2. Incident Report.
+3. Coordinator Dashboard.
+4. Roster Availability.
+5. Equipment & Training.
+
+Current Power Apps screen mapping:
+- `Screen1`: Home menu.
+- `Screen2`: Incident Report.
+- `Screen3`: Coordinator Dashboard.
+- `Screen4`: Roster Availability.
+- `Screen5`: Equipment & Training.
 
 ## 4. Incident Report Screen
 Minimum controls:
@@ -96,4 +104,3 @@ Record:
 2. Export `.msapp` or use Git integration if available.
 3. Add exported source/package to the repository.
 4. Share GitHub repository with the teaching team.
-

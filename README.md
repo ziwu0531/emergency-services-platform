@@ -31,6 +31,9 @@ The final repository should also include the exported or unpacked app source aft
 ## Current Build Status
 - Power App created and published: `Emergency Services Platform`.
 - App id: `2018936c-ebc9-4ae8-b0ec-30c85b38d29a`.
-- Current app is a collection-backed MVP created in Power Apps Studio.
-- Smoke-test screenshot: `powerapps-smoke-test.png`.
+- Current app is a five-screen canvas MVP created in Power Apps Studio:
+  `Screen1` Home, `Screen2` Incident Report, `Screen3` Coordinator Dashboard,
+  `Screen4` Roster Availability, and `Screen5` Equipment & Training.
+- Final layout screenshots: `powerapps-Screen1-final.png` through `powerapps-Screen5-final.png`.
+- Earlier smoke-test screenshot: `powerapps-smoke-test.png`.
 - Native Test Studio tests, Monitor export, teaching-team sharing, and source export are still pending.
