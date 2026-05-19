@@ -3,6 +3,7 @@
 *.msapp
 *.zip
 *.log
+*.msi
 *.pdf
 monitor-evidence/
 source-export/

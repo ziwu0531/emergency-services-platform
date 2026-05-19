@@ -4,15 +4,24 @@
 
 | ID | A1 Requirement / Criterion | Test Evidence | Expected Result | Final Result |
 | --- | --- | --- | --- | --- |
-| FR1 | One-click incident reporting with GPS location | TS-01, manual smoke test, screenshot | User submits incident with type, severity, location, notes, and status `New` | Pending |
-| FR2 | Real-time incident dashboard for coordinators | TS-04, Monitor dashboard refresh trace | New incident appears in coordinator dashboard and status can be updated | Pending |
-| FR3 | Volunteer availability and roster management | TS-02 | Volunteer availability record is saved and visible in roster view | Pending |
-| FR4 | Equipment check and maintenance logging | TS-03 | Equipment condition is logged with date/time and notes | Pending |
-| FR5 | Training and certification tracking | Manual smoke test | Training record is created with status and expiry date | Pending |
+| FR1 | One-click incident reporting with GPS location | Manual smoke test, `powerapps-smoke-test.png`; TS-01 pending | User submits incident with type, severity, location, notes, and status `New` | Manual pass; native Test Studio pending |
+| FR2 | Real-time incident dashboard for coordinators | Manual smoke test; TS-04 and Monitor pending | New incident appears in coordinator dashboard and status can be updated | Prototype pass using collection action; dashboard evidence pending |
+| FR3 | Volunteer availability and roster management | Manual smoke test; TS-02 pending | Volunteer availability record is saved and visible in roster view | Manual pass; native Test Studio pending |
+| FR4 | Equipment check and maintenance logging | Manual smoke test; TS-03 pending | Equipment condition is logged with date/time and notes | Manual pass; native Test Studio pending |
+| FR5 | Training and certification tracking | Manual smoke test | Training record is created with status and expiry date | Manual pass |
 | NFR1 | Incident report under 10 seconds | timed manual test | A volunteer completes incident submission in under 10 seconds | Pending |
 | NFR3 | Actions under 2 seconds where feasible | Power Apps Monitor | Common actions complete in around 2 seconds or limitation is documented | Pending |
-| NFR4 | Role-based access control | manual role test | Coordinator-only controls are hidden from Volunteer role | Pending |
-| NFR5 | Accessibility / WCAG 2.1 focus | accessibility checklist | Labels, contrast, focus order, and touch targets are acceptable | Pending |
+| NFR4 | Role-based access control | manual role test | Coordinator-only controls are hidden from Volunteer role | Not fully implemented; documented as prototype limitation |
+| NFR5 | Accessibility / WCAG 2.1 focus | accessibility checklist | Labels, contrast, focus order, and touch targets are acceptable | Preliminary pass; final checklist pending |
+
+## Manual Smoke Test Result
+- Date: 2026-05-19.
+- App: `Emergency Services Platform`.
+- App id: `2018936c-ebc9-4ae8-b0ec-30c85b38d29a`.
+- Environment: The University of Sydney (Students) default environment.
+- Evidence: `powerapps-smoke-test.png`.
+- Result: The preview app loaded and accepted values for incident, availability, equipment, and training fields. The data-saving action buttons were pressed without blocking runtime errors in the preview frame.
+- Backend note: current build uses in-memory collections (`Collect`) as a fast MVP fallback. SharePoint Lists should replace collections for stronger persistence and better Monitor evidence.
 
 ## Test Studio Test Cases
 
@@ -89,4 +98,3 @@ Example observation format:
 | Focus/navigation | Keyboard/tab order follows screen flow | Pending | Verify after controls are built. |
 | Error prevention | Required fields are clear before submit | Pending | Use validation labels and notifications. |
 | Cognitive load | Screens use short labels and obvious workflow order | Pending | Keep incident submission minimal. |
-

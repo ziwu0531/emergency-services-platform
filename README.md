@@ -28,3 +28,9 @@ The final repository should also include the exported or unpacked app source aft
 - preferred: Power Platform Git Integration source files;
 - fallback: exported `.msapp` plus unpacked source from Power Platform CLI.
 
+## Current Build Status
+- Power App created and published: `Emergency Services Platform`.
+- App id: `2018936c-ebc9-4ae8-b0ec-30c85b38d29a`.
+- Current app is a collection-backed MVP created in Power Apps Studio.
+- Smoke-test screenshot: `powerapps-smoke-test.png`.
+- Native Test Studio tests, Monitor export, teaching-team sharing, and source export are still pending.

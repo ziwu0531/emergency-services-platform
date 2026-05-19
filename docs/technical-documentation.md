@@ -11,7 +11,9 @@ Emergency Services Platform is a Power Apps canvas app prototype for community e
 The MVP uses an in-app role selector for demonstration. This provides visible role-based behavior for assessment, but it is not a full security boundary. A production version should enforce roles through Microsoft Entra groups and SharePoint permissions.
 
 ## Backend Design
-Preferred backend: SharePoint Lists.
+Current backend: in-memory Power Apps collections created with `Collect`.
+
+Preferred backend upgrade: SharePoint Lists. The collection names and field names mirror the intended SharePoint Lists so the app can be migrated without changing the documented data model.
 
 ```mermaid
 erDiagram
@@ -74,8 +76,8 @@ flowchart TD
 - Soft role switching is used for assessment demonstration; true tenant RBAC is listed as future work.
 
 ## Known Limitations
+- The current MVP uses collections, so data is session-scoped unless migrated to SharePoint Lists.
 - Location capture depends on browser permission and device availability.
 - Offline caching is listed in A1 but may be represented as a limitation unless time permits implementation with `SaveData` and `LoadData`.
 - Test Studio may not fully automate modern controls or location prompts.
 - App-level role selection is not production security.
-
