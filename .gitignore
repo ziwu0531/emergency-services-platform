@@ -1,0 +1,8 @@
+.playwright-profile/
+.powerapps-profile/
+*.msapp
+*.zip
+*.log
+*.pdf
+monitor-evidence/
+source-export/
