@@ -1,5 +1,6 @@
 .playwright-profile/
 .powerapps-profile/
+.github-profile/
 *.msapp
 *.zip
 *.log
@@ -14,3 +15,7 @@ powerapps-current-*.png
 powerapps-dialog-state.png
 powerapps-layout-*.png
 powerapps-single-paste-test.png
+powerapps-advanced-tools.png
+powerapps-more-menu.png
+powerapps-test-studio-*.png
+github-*.png
