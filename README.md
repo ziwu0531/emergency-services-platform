@@ -18,15 +18,17 @@ This app supports community emergency service volunteers by consolidating incide
 ## Repository Contents
 - `app-build-spec.md`: implementation specification for the Power App.
 - `qa/testing-report.md`: traceability matrix, test cases, Test Studio results, Monitor evidence, and accessibility evaluation.
+- `qa/evidence/`: screenshots from Power Apps Studio, Test Studio, Monitor, and export checks.
 - `docs/technical-documentation.md`: backend and UI flow documentation.
+- `docs/source-export-notes.md`: source/package export status and PAC CLI limitation.
 - `docs/user-guide.md`: volunteer-facing how-to guide.
 - `notes.md`: extracted A1 requirements.
 - `task_plan.md`: delivery progress tracker.
 
 ## Source Export
-The final repository should also include the exported or unpacked app source after the app is built:
-- preferred: Power Platform Git Integration source files;
-- fallback: exported `.msapp` plus unpacked source from Power Platform CLI.
+The app source export is tracked as a documented limitation in `docs/source-export-notes.md`.
+Power Platform CLI was installed, but `pac.exe` crashes in this environment, so `pac canvas unpack` could not be used.
+The Power Apps Home row menu was checked for package export; direct export was not visible in the current compact row menu.
 
 ## Current Build Status
 - Power App created and published: `Emergency Services Platform`.
@@ -36,4 +38,6 @@ The final repository should also include the exported or unpacked app source aft
   `Screen4` Roster Availability, and `Screen5` Equipment & Training.
 - Final layout screenshots: `powerapps-Screen1-final.png` through `powerapps-Screen5-final.png`.
 - Earlier smoke-test screenshot: `powerapps-smoke-test.png`.
-- Native Test Studio tests, Monitor export, teaching-team sharing, and source export are still pending.
+- Native Test Studio was opened and attempted; the browser session exposed read-only step action fields, so the final QA package records the native attempt and manual workflow pass/fail results.
+- Monitor evidence captured a successful `UserAction Select` on `HomeIncident` during preview.
+- Source/package export remains a documented tooling limitation pending a working PAC CLI or visible Power Apps export command.

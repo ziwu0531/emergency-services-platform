@@ -12,18 +12,18 @@
 - Manual smoke test was run in preview mode and screenshot evidence was captured as `powerapps-smoke-test.png`.
 
 ## Current Priorities
-1. Add native Test Studio tests and record final pass/fail results.
-2. Capture Power Apps Monitor evidence during the smoke-test workflows.
-3. Export or unpack source code and publish to GitHub.
-4. Replace collection fallback with SharePoint Lists if time and permissions allow.
+1. Commit and push the updated QA evidence and documentation to GitHub.
+2. If more time becomes available, repair PAC CLI or use Power Apps package export from the full app details/Solutions area.
+3. Replace collection fallback with SharePoint Lists if time and permissions allow.
 
 ## App Build Checklist
 - Created Power Apps canvas app.
-- Implemented a one-screen MVP with four assignment sections:
-  - Incident Report
-  - Coordinator Dashboard
-  - Roster Availability
-  - Equipment & Training
+- Implemented a five-screen canvas MVP:
+  - Screen1: Home
+  - Screen2: Incident Report
+  - Screen3: Coordinator Dashboard
+  - Screen4: Roster Availability
+  - Screen5: Equipment & Training
 - Current backend is in-memory Power Apps collections, used as fallback because it is the fastest reliable path in the student environment:
   - `Incidents`
   - `VolunteerAvailability`
@@ -37,7 +37,7 @@
 
 ## Evidence Checklist
 - Manual smoke test results: completed in preview mode.
-- Test Studio suite results: pending native Test Studio creation.
-- Monitor screenshot/log with one concrete performance observation: pending.
-- Accessibility checklist.
-- Exported app/source files in GitHub: pending.
+- Test Studio suite results: native Test Studio opened and attempted; read-only action fields documented as limitation.
+- Monitor screenshot/log with one concrete performance observation: completed in `qa/evidence/monitor-workflow.png`.
+- Accessibility checklist: completed in `qa/testing-report.md`.
+- Exported app/source files in GitHub: blocked by PAC CLI crash and missing compact-menu export command; documented in `docs/source-export-notes.md`.
