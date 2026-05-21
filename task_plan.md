@@ -9,7 +9,7 @@
   - Name: `Emergency Services Platform`
   - App id: `2018936c-ebc9-4ae8-b0ec-30c85b38d29a`
   - Environment: The University of Sydney (Students) default environment.
-- Manual smoke test was run in preview mode and screenshot evidence was captured as `powerapps-smoke-test.png`.
+- Manual smoke testing was run in preview mode and final five-screen screenshot evidence was captured as `powerapps-Screen1-final.png` through `powerapps-Screen5-final.png`.
 
 ## Current Priorities
 1. Commit and push the updated QA evidence and documentation to GitHub.
@@ -37,7 +37,7 @@
 
 ## Evidence Checklist
 - Manual smoke test results: completed in preview mode.
-- Test Studio suite results: native Test Studio opened and attempted; read-only action fields documented as limitation.
+- Test Studio suite results: native Test Studio evidence captured and four-case suite documented with platform limitation notes.
 - Monitor screenshot/log with one concrete performance observation: completed in `qa/evidence/monitor-workflow.png`.
 - Accessibility checklist: completed in `qa/testing-report.md`.
-- Exported app/source files in GitHub: blocked by PAC CLI crash and missing compact-menu export command; documented in `docs/source-export-notes.md`.
+- Exported app/source files in GitHub: PAC export is blocked by CLI crash and missing compact-menu export command; fallback source reconstruction is in `source/EmergencyServicesPlatform/` and documented in `docs/source-export-notes.md`.

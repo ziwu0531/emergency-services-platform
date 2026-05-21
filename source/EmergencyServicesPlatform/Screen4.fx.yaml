@@ -1,0 +1,15 @@
+Screen4:
+  Title: Roster Availability
+  Purpose: Volunteer availability entry and roster review.
+  Controls:
+    HomeButton:
+      Text: Home
+      OnSelect: Navigate(Screen1)
+    DateInput:
+      Default: 22 May
+    AvailabilityInput:
+      Default: Morning Available
+    SaveAvailability:
+      Text: Save Availability
+      OnSelect: Notify("Availability saved", NotificationType.Success)
+

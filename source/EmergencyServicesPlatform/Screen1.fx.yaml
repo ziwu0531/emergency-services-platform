@@ -1,0 +1,17 @@
+Screen1:
+  Title: Emergency Services Platform
+  Purpose: Home menu and workflow navigation.
+  Controls:
+    HomeIncident:
+      Text: Report Incident
+      OnSelect: Navigate(Screen2)
+    HomeDashboard:
+      Text: Coordinator Dashboard
+      OnSelect: Navigate(Screen3)
+    HomeRoster:
+      Text: Roster Availability
+      OnSelect: Navigate(Screen4)
+    HomeEquipment:
+      Text: Equipment and Training
+      OnSelect: Navigate(Screen5)
+

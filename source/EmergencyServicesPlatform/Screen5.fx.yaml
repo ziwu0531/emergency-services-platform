@@ -1,0 +1,18 @@
+Screen5:
+  Title: Equipment and Training
+  Purpose: Equipment check logging and certification/training status.
+  Controls:
+    HomeButton:
+      Text: Home
+      OnSelect: Navigate(Screen1)
+    EquipmentInput:
+      Default: Radio Ready
+    SaveEquipmentCheck:
+      Text: Save Equipment Check
+      OnSelect: Notify("Equipment check saved", NotificationType.Success)
+    TrainingInput:
+      Default: First aid current
+    SaveTrainingData:
+      Text: Save Training Data
+      OnSelect: Notify("Training record saved", NotificationType.Success)
+

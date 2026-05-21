@@ -1,0 +1,22 @@
+Screen2:
+  Title: Incident Report
+  Purpose: Volunteer incident submission workflow.
+  Controls:
+    HomeButton:
+      Text: Home
+      OnSelect: Navigate(Screen1)
+    IncidentTypeInput:
+      Default: Flood
+    SeverityInput:
+      Default: High
+    LocationInput:
+      Default: Camperdown campus gate
+    NotesInput:
+      Default: Water on road and blocked access
+    SubmitIncident:
+      Text: Submit Incident
+      OnSelect: Notify("Incident submitted", NotificationType.Success)
+    OpenDashboard:
+      Text: Open Dashboard
+      OnSelect: Navigate(Screen3)
+

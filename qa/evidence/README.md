@@ -8,5 +8,6 @@ Key files:
 - `test-studio-record-attempt.png`: native recording/editing attempt evidence.
 - `monitor-opened.png`: Power Apps Monitor session connected to the app.
 - `monitor-workflow.png`: Monitor event list after preview interaction; includes `UserAction Select` on `HomeIncident`.
+- `monitor-multiple-workflows.png`: later Monitor check while attempting multiple preview workflows.
+- `workflow-click-*.png`: preview workflow screenshots captured while exercising the app.
 - `powerapps-row-menu.png`: Power Apps app row menu used to check available export commands.
-

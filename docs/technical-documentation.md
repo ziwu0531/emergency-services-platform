@@ -79,7 +79,7 @@ flowchart TD
 ## Key Design Decisions
 - Five-screen structure keeps the MVP close to the A1 requirements while avoiding a crowded single-screen layout.
 - Incident reporting is optimized for speed: dropdowns, short note entry, location support, and a single submit action.
-- SharePoint Lists are used because they are accessible from student Microsoft accounts and produce observable connector calls in Power Apps Monitor.
+- SharePoint Lists remain the preferred backend because they are accessible from student Microsoft accounts and produce observable connector calls in Power Apps Monitor. The submitted MVP currently uses local canvas behavior/collections as a safe prototype fallback.
 - Soft role switching is used for assessment demonstration; true tenant RBAC is listed as future work.
 
 ## Known Limitations

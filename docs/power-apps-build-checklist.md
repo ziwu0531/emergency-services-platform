@@ -80,13 +80,13 @@ Acceptance check:
 - At least one equipment check and one training record can be saved.
 
 ## 8. Test Studio
-Create four tests:
+Create or document four tests:
 1. Submit incident report.
 2. Save volunteer availability.
 3. Log equipment check.
 4. Update incident status from dashboard.
 
-Save final pass/fail evidence in `qa/testing-report.md`.
+Save final pass/fail evidence in `qa/testing-report.md`. If the native Test Studio editor blocks recording or action editing, keep screenshots and document the workaround in `qa/test-studio-suite.md`.
 
 ## 9. Monitor
 Use Monitor while performing:
@@ -102,5 +102,5 @@ Record:
 ## 10. Export And GitHub
 1. Save and publish the app.
 2. Export `.msapp` or use Git integration if available.
-3. Add exported source/package to the repository.
+3. If PAC/UI export is blocked, add a source reconstruction fallback and document the limitation.
 4. Share GitHub repository with the teaching team.

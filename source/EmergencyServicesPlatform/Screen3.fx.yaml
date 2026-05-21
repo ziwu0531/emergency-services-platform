@@ -1,0 +1,13 @@
+Screen3:
+  Title: Coordinator Dashboard
+  Purpose: Coordinator review and incident status workflow.
+  Controls:
+    HomeButton:
+      Text: Home
+      OnSelect: Navigate(Screen1)
+    DashboardSummary:
+      Text: Active incidents appear here
+    MarkResolved:
+      Text: Mark Resolved
+      OnSelect: Notify("Latest incident marked resolved", NotificationType.Success)
+

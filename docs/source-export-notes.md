@@ -6,17 +6,13 @@
 - Environment: The University of Sydney (Students) default environment
 
 ## Current Source Package Status
-The working app exists in Power Apps and the repository contains the delivery documentation and evidence package. A full unpacked canvas app source export is not included yet because the local Power Platform CLI is not usable in this Windows environment.
+The working app exists in Power Apps and the repository contains the delivery documentation, evidence package, and a source reconstruction fallback under `source/EmergencyServicesPlatform/`. A full PAC-generated unpacked canvas app source export is not included because the local Power Platform CLI is not usable in this Windows environment.
 
 `pac.exe` was installed at:
 
 `C:\Users\Lenovo\AppData\Local\Microsoft\PowerAppsCLI\Microsoft.PowerApps.CLI.2.7.4\tools\pac.exe`
 
-When invoked, it crashed with the localized exception message:
-
-`由于 Exception.ToString() 失败，因此无法打印异常字符串。`
-
-Because `pac canvas unpack` depends on a working `pac.exe`, the repository documents this as a toolchain limitation rather than pretending an unpacked source export exists.
+When invoked, it crashed before source unpacking could complete. Because `pac canvas unpack` depends on a working `pac.exe`, the repository documents this as a toolchain limitation rather than pretending an unpacked source export exists.
 
 ## UI Export Attempt
 Power Apps Home was opened for the signed-in student account and the row menu for `Emergency Services Platform` was checked. The visible commands were edit, play, share, details, create agent from app, settings, and delete. A direct export/package command was not visible in the compact home row menu during this session.
@@ -24,6 +20,9 @@ Power Apps Home was opened for the signed-in student account and the row menu fo
 Evidence:
 - `qa/evidence/powerapps-home-for-export.png`
 - `qa/evidence/powerapps-row-menu.png`
+
+## Source Fallback Included
+The repository includes `source/EmergencyServicesPlatform/` with screen-level YAML files documenting the app structure, named controls, and key formulas. This is not a replacement for a true PAC unpack, but it gives the teaching team reviewable source-like material in GitHub while the PAC toolchain is blocked.
 
 ## Recommended Final Export Path
 If the export option becomes available from the app details page or Solutions area, export the app package as:
